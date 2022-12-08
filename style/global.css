@@ -15,10 +15,11 @@ body {
     width: 100%;
     height: 100vh;
 
-    background: #E5E5E5;
+    background: var(--colorBody);
 }
 
 :root{
+    --colorBody: #E5E5E5;
     --bgBody: #F1F2F3;
     --textColor: #000;
     --spanColor: rgba(0,0,0,0.2);
@@ -30,6 +31,7 @@ body {
     --homeDarkMode: url(/assets/btn-home-dark.svg);
 }
 .dark-mode:root {
+    --colorBody: #D2D3DA;
     --bgBody: #17171C;
     --textColor: #FFF;
     --spanColor: rgba(255,255,255,0.2);
@@ -40,7 +42,7 @@ body {
     --homeDarkMode: url(/assets/btn-home-light.svg);
 }
 
-.container {
+.container_app {
     position: absolute;
     top: 50%;
     left: 50%;
