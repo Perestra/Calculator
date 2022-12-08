@@ -8,17 +8,34 @@
     align-items: center;
     justify-content: center;
 
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
-.dark_mode {
-    width: 100%;
-    max-width: 72px;
-    height: 32px;
+#time {
+    width: 57px;
+    height: 15px;
 
-    background: var(--iconDarkMode);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--textColor);
+}
+#notch {
+    width: 170px;
+    height: 31px;
+
+    background-image: url(/assets/notch.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 
-    cursor: pointer;
+    margin: 0 20px;
+}
+#status {
+    width: 57px;
+    height: 15px;
+
+    background: var(--statusDarkMode);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

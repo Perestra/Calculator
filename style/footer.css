@@ -1,0 +1,21 @@
+
+
+.footer__container {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+#home {
+    width: 135px;
+    height: 5px;
+
+    background: var(--homeDarkMode);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
