@@ -1,2 +1,2 @@
 # Calculator
-Projeto com foco em recriar a calculadora do S.O. iOS
+Este projeto é uma releitura da calculado do sistema operacional iOS.
