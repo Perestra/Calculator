@@ -1,0 +1,61 @@
+
+
+.section__container {
+    width: 100%;
+    height: auto;
+
+    margin: 16px 0 0;
+}
+.table_buttons {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttons {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: 16px;
+}
+.buttons:not(:last-child) {
+    margin-bottom: 10px;
+}
+.button {
+    width: 72px;
+    height: 72px;
+    
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.button[value] {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--textColor);
+}
+.button.double-size {
+   width: 160px;
+   
+}
+.button.light-grey {
+    background: var(--bgOthers);
+}
+.button.dark-grey {
+    background: var(--bgNumbers);
+}
+.button.blue {
+    background: var(--bgOperations);
+}
+.button.blue[value] {
+    color: #FFF;
+}

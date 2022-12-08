@@ -1,0 +1,34 @@
+
+
+.main__container {
+    width: 100%;
+    height: auto;
+}
+.results {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+
+    padding: 0 10px;
+}
+.results span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: rgba(0,0,0,0.2);
+}
+.results input {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    color: var(--textColor);
+
+    background: none;
+    border: none;
+    outline: none;
+    text-align: end;
+}
