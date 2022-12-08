@@ -1,0 +1,28 @@
+@import url(/style/header.css);
+@import url(/style/main.css);
+@import url(/style/section.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bgBody);
+}
+
+:root{
+    --bgBody: #F1F2F3;
+    --textColor: #FFF;
+    --bgNumbers: #FFF;
+    --bgOperations: #4B5EFC;
+    --bgOthers: #D2D3DA;
+   
+}
+.dark-mode:root {
+    --bgBody: #17171C;
+    --textColor: #000;
+    --bgNumbers: #2E2F38;
+    --bgOthers: #4E505F;
+}
