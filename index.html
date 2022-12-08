@@ -10,47 +10,56 @@
 <body>
     <div class="container">
         <header class="header__container">
-            <div class="dark_mode"></div>
+            <span id="time">00:00</span>
+            <div id="notch"></div>
+            <div id="status"></div>
         </header>
         <main class="main__container">
+            <div class="dark_mode"></div>
             <div class="results">
-                <span>6,291÷5</span>
-                <input type="text" value="1,258.2">
+                <span id="calc">0</span>
+                <input id="display" type="text" value="0">
             </div>
         </main>
         <section class="section__container">
             <table class="table_buttons">
                 <tr class="buttons">
-                    <td><button type="button" class="button light-grey" value="C">C</button></td>
+                    <td><button type="button" class="button light-grey" value="C" onclick="setDefalutValueOnDisplay()">C</button></td>
                     <td><button type="button" class="button light-grey" value="±">±</button></td>
-                    <td><button type="button" class="button light-grey" value="%">%</button></td>
-                    <td><button type="button" class="button blue" value="÷">÷</button></td>
+                    <td><button type="button" class="button light-grey" value="%" onclick="percentageCalc()">%</button></td>
+                    <td><button type="button" class="button get-value blue" value="/">÷</button></td>
                 </tr>
                 <tr class="buttons">
-                    <td><button type="button" class="button dark-grey" value="7">7</button></td>
-                    <td><button type="button" class="button dark-grey" value="8">8</button></td>
-                    <td><button type="button" class="button dark-grey" value="9">9</button></td>
-                    <td><button type="button" class="button blue" value="x">x</button></td>
+                    <td><button type="button" class="button get-value dark-grey" value="7">7</button></td>
+                    <td><button type="button" class="button get-value dark-grey" value="8">8</button></td>
+                    <td><button type="button" class="button get-value dark-grey" value="9">9</button></td>
+                    <td><button type="button" class="button get-value blue" value="*">x</button></td>
                 </tr>
                 <tr class="buttons">
-                    <td><button type="button" class="button dark-grey" value="4">4</button></td>
-                    <td><button type="button" class="button dark-grey" value="5">5</button></td>
-                    <td><button type="button" class="button dark-grey" value="6">6</button></td>
-                    <td><button type="button" class="button blue" value="-">-</button></td>
+                    <td><button type="button" class="button get-value dark-grey" value="4">4</button></td>
+                    <td><button type="button" class="button get-value dark-grey" value="5">5</button></td>
+                    <td><button type="button" class="button get-value dark-grey" value="6">6</button></td>
+                    <td><button type="button" class="button get-value blue" value="-">-</button></td>
                 </tr>
                 <tr class="buttons">
-                    <td><button type="button" class="button dark-grey" value="1">1</button></td>
-                    <td><button type="button" class="button dark-grey" value="2">2</button></td>
-                    <td><button type="button" class="button dark-grey" value="3">3</button></td>
-                    <td><button type="button" class="button blue" value="+">+</button></td>
+                    <td><button type="button" class="button get-value dark-grey" value="1">1</button></td>
+                    <td><button type="button" class="button get-value dark-grey" value="2">2</button></td>
+                    <td><button type="button" class="button get-value dark-grey" value="3">3</button></td>
+                    <td><button type="button" class="button get-value blue" value="+">+</button></td>
                 </tr>
                 <tr class="buttons">
-                    <td><button type="button" class="button dark-grey double-size" value="0">0</button></td>
-                    <td><button type="button" class="button dark-grey" value=",">,</button></td>
-                    <td><button type="button" class="button blue" value="=">=</button></td>
+                    <td><button type="button" class="button get-value dark-grey double-size" value="0">0</button></td>
+                    <td><button type="button" class="button get-value dark-grey" value=",">,</button></td>
+                    <td><button type="button" class="button blue" value="=" onclick="solveCalc()">=</button></td>
                 </tr>
             </table>
         </section>
+        <footer class="footer__container">
+            <div id="home"></div>
+        </footer>
     </div>
+
+    <script src="/script/main.js"></script>
+
 </body>
 </html>
