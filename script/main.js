@@ -7,6 +7,7 @@ let buttons = document.querySelectorAll('.get-value')
 const mode = document.querySelector('.dark_mode')
 const html = document.querySelector('html')
 const valueDefault = '0'
+const displayMaxLength = 9
 
 function setDefalutValueOnDisplay() {
     display.value = valueDefault
@@ -32,14 +33,16 @@ function setDate() {
 
 buttons.forEach(button => {
     button.addEventListener('click', e => {
-        if(e.target.value === ',') {
+        let displayLength = display.value.length + 1
+
+        if(e.target.value === ',' && displayLength < displayMaxLength) {
             display.value += e.target.value
         } 
-        else if(display.value === valueDefault){
+        else if(display.value === valueDefault && displayLength < displayMaxLength) {
             display.value = ''
             display.value += e.target.value
         } 
-        else {
+        else if(displayLength <= displayMaxLength) {
             display.value += e.target.value
         }
     })
@@ -47,6 +50,5 @@ buttons.forEach(button => {
 mode.addEventListener('click', () => {
     html.classList.toggle('dark-mode')
 })
-
 setDate()    
  
