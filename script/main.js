@@ -26,6 +26,9 @@ function solveCalc() {
 function percentageCalc() {
     display.value /= 100 
 }
+function negativateNumber() {
+    display.value *= -1
+}
 function setDate() {
     let spanTime = document.getElementById('time')
     let date = new Date()
