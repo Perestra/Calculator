@@ -28,7 +28,6 @@ body {
     --bgOthers: #D2D3DA;
     --iconDarkMode: url(/assets/btn-light.svg);
     --statusDarkMode: url(/assets/status-dark.svg);
-    --homeDarkMode: url(/assets/btn-home-dark.svg);
 }
 .dark-mode:root {
     --colorBody: #D2D3DA;
@@ -39,7 +38,6 @@ body {
     --bgOthers: #4E505F;
     --iconDarkMode: url(/assets/btn-dark.svg);
     --statusDarkMode: url(/assets/status-light.svg);
-    --homeDarkMode: url(/assets/btn-home-light.svg);
 }
 
 .container_app {
